@@ -24,6 +24,10 @@ public class WeatherActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_weather);
+		
+		// we setup the proxy in case we need this
+		//System.setProperty("http.proxyHost", "........");
+		//System.setProperty("http.proxyPort", "911");
 
 		// get the passed values from the MainActivty and prepare tge
 		Intent intent = getIntent();
