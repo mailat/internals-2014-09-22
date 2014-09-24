@@ -16,7 +16,7 @@ import android.widget.TextView;
 public class WeatherActivity extends Activity {
 	String request;
 	String response;
-	TextView listText;
+	TextView actualTemp;
 	TextView minTemp;
 	TextView maxtemp;
 
@@ -36,7 +36,7 @@ public class WeatherActivity extends Activity {
 		request = "http://api.openweathermap.org/data/2.5/weather?q=" + city
 				+ ",en&units=metric";
 
-		listText = (TextView) findViewById(R.id.listText);
+		actualTemp = (TextView) findViewById(R.id.actualTemp);
 		minTemp = (TextView) findViewById(R.id.minTemp);
 		maxtemp = (TextView) findViewById(R.id.maxTemp);
 
@@ -71,7 +71,7 @@ public class WeatherActivity extends Activity {
 			try {
 				JSONObject jObj = new JSONObject(response);
 				JSONObject jsonObj = jObj.getJSONObject("main");
-				listText.setText(new Float(jsonObj.getString("temp"))
+				actualTemp.setText(new Float(jsonObj.getString("temp"))
 						.intValue() + "\u00B0");
 				minTemp.setText(new Float(jsonObj.getString("temp_min"))
 						.intValue() + "\u00B0");
@@ -90,4 +90,5 @@ public class WeatherActivity extends Activity {
 		}
 
 	}
+
 }

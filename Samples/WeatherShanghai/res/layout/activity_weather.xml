@@ -60,7 +60,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/listText"
+        android:id="@+id/actualTemp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
