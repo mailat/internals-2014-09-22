@@ -37,17 +37,14 @@ Step 3
 Step 4
 - in  device/marakana/alpha/common.mk change to 
 
-# Enable our custom kernel
-LOCAL_KERNEL := $(MY_PATH)/kernel
-PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+- LOCAL_KERNEL := $(MY_PATH)/kernel
+- PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 
-# Copy our init and ueventd configuration files to the root
-# file system (ramdisk.img -> boot.img)
 - PRODUCT_COPY_FILES += $(MY_PATH)/init.goldfish.rc:root/init.goldfish.rc
 - PRODUCT_COPY_FILES += $(MY_PATH)/ueventd.goldfish.rc:root/ueventd.goldfish.rc
 - PRODUCT_COPY_FILES += $(MY_PATH)/fstab.goldfish:root/fstab.goldfish
 
-- work further on ShanghaiWeather with a ListActivity
-- use the url: http://api.openweathermap.org/data/2.5/weather?q=Shanghai,en&units=metric
+Step 5 - Work further on ShanghaiWeather with a ListActivity
+- use the url: http://api.openweathermap.org/data/2.5/forecast?q=Shanghai,en&units=metric
 - create 2 button on the MainActivity and redirect to ForecastActivity.java
 - ForecastActivity.java will extend a ListActivity and please use the example project "06_ListView", class SimpleListActivity.java
