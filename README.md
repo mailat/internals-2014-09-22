@@ -21,16 +21,15 @@ For Kernel use the bellow instructions:
 
 Step 1
 
-cp device/generic/goldfish/init.goldfish.rc device/marakana/alpha/init.goldfish.rc
-cp device/generic/goldfish/ueventd.goldfish.rc device/marakana/alpha/goldfish.marakanaalphaboard.rc
-cp device/generic/goldfish/fstab.goldfish device/marakana/alpha/fstab.goldfish
+- cp device/generic/goldfish/init.goldfish.rc device/marakana/alpha/init.goldfish.rc
+- cp device/generic/goldfish/ueventd.goldfish.rc device/marakana/alpha/goldfish.marakanaalphaboard.rc
+- cp device/generic/goldfish/fstab.goldfish device/marakana/alpha/fstab.goldfish
 
 Step 2
 
-cp prebuilts/qemu-kernel/x86/kernel-qemu device/marakana/alpha/kernel
+- cp prebuilts/qemu-kernel/x86/kernel-qemu device/marakana/alpha/kernel
 
 Step 3
 
-in device/marakana/alpha/BoardConfig.mk
-…
-TARGET_NO_KERNEL := false
+-in device/marakana/alpha/BoardConfig.mk
+- change to TARGET_NO_KERNEL := false
