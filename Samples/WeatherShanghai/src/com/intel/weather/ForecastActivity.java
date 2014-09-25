@@ -45,11 +45,7 @@ public class ForecastActivity extends ListActivity {
         		+ "&en&units=metric";
         
         //the right way to get the weather
-        //new WeatherReaderUpdater().execute(loadForecastUrl);
-        
-        list.add("Temperatur is: 45");
-        list.add("Temperatur is: 75");
-		adapter.notifyDataSetChanged();
+        new WeatherReaderUpdater().execute(loadForecastUrl);
     }
      
     private class WeatherReaderUpdater extends AsyncTask<String, Void, Void> {

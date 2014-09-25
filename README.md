@@ -48,3 +48,8 @@ Step 5 - Work further on ShanghaiWeather with a ListActivity
 - use the url: http://api.openweathermap.org/data/2.5/forecast?q=Shanghai,en&units=metric
 - create 2 button on the MainActivity and redirect to ForecastActivity.java
 - ForecastActivity.java will extend a ListActivity and please use the example project "06_ListView", class SimpleListActivity.java
+
+Homework Day 3
+
+- expose the native library via JNI, please follow the steps on the page 222
+- create a button in the WeatherActivity calling the RefreshService.java We will pass as reference a Messenger for getting the weather response. We use the template at page: 101 in the course! 
