@@ -5,37 +5,30 @@
     android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
-   <EditText
+    <EditText
         android:id="@+id/inputCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ems="10"
         android:lines="1"
-        android:text="Shanghai"
-        android:ems="10" />
+        android:text="Shanghai" />
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:gravity="center_horizontal" >
-
-       <Button
-           android:id="@+id/button1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Button" />
-
-       <Button
-           android:id="@+id/button2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Button" />
-
-   </LinearLayout>
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="showWeather"
-        android:text="@string/show_weather" />
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showWeather"
+            android:text="@string/show_weather" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="forecastWeather"
+            android:text="@string/forecast_weather" />
+    </LinearLayout>
 
 </LinearLayout>

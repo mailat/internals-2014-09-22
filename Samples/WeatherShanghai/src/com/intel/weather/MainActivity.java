@@ -19,15 +19,27 @@ public class MainActivity extends Activity {
 	
 	public void showWeather(View view)
 	{
-		//luam orasul din interfata
+		//we read the city
 		EditText inputCity =(EditText) findViewById(R.id.inputCity);
 		String city = inputCity.getText().toString();
 		Log.d("WeatherShanghai", "The city is: " + city);
 		
-		//sarim in a doua activitate
+		//jump in WeatherActivity
 		Intent intent = new Intent(this, WeatherActivity.class);
 		intent.putExtra("city", city);
 		startActivity(intent);
 	}
 	
+	public void forecastWeather(View view)
+	{
+		//we read the city
+		EditText inputCity =(EditText) findViewById(R.id.inputCity);
+		String city = inputCity.getText().toString();
+		Log.d("WeatherShanghai", "The city is: " + city);
+		
+		//jump in ForecastActivity
+		Intent intent = new Intent(this, ForecastActivity.class);
+		intent.putExtra("city", city);
+		startActivity(intent);
+	}	
 }
