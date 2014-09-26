@@ -49,12 +49,12 @@ Step 5 - Work further on ShanghaiWeather with a ListActivity
 - create 2 button on the MainActivity and redirect to ForecastActivity.java
 - ForecastActivity.java will extend a ListActivity and please use the example project "06_ListView", class SimpleListActivity.java
 
-Homework Day 3
+Homework Day 4
 
 - expose the native library via JNI, please follow the steps on the page 222
 - create a button in the WeatherActivity calling the RefreshService.java We will pass as reference a Messenger for getting the weather response. We use the template at page: 101 in the course! 
 
-Homework Day 3
+Homework Day 5
 
 - implement the changes on the chapter "Consuming our a Custom Java/JNI→Native Library via a Custom App" at the page 223 in the course
 - modify the Weather app and add a Widget to it
