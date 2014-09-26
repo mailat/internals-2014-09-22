@@ -53,3 +53,8 @@ Homework Day 3
 
 - expose the native library via JNI, please follow the steps on the page 222
 - create a button in the WeatherActivity calling the RefreshService.java We will pass as reference a Messenger for getting the weather response. We use the template at page: 101 in the course! 
+
+Homework Day 3
+
+- implement the changes on the chapter "Consuming our a Custom Java/JNI→Native Library via a Custom App" at the page 223 in the course
+- modify the Weather app and add a Widget to it
